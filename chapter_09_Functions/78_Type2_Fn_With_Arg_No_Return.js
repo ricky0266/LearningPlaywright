@@ -11,6 +11,8 @@ greetByName("Dipak");
 greetByName("Meeti");
 greetByName("Sangeetha");
 
+//-------------------
+
 
 function begger(money) {
     console.log("Thanks", money);

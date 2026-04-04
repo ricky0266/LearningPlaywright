@@ -7,7 +7,6 @@ function greet() {
 // Call
 greet();
 
-let a = greet();
 
 
 

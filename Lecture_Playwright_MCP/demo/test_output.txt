@@ -1,0 +1,131 @@
+﻿
+Running 5 tests using 1 worker
+
+  Γ£ÿ  1 Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:14:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-001: Invalid login with Arabic email and password (24.8s)
+  Γ£ÿ  2 Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:45:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-002: Invalid login with Chinese email and password (18.4s)
+  Γ£ÿ  3 Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:76:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-003: Invalid login with fake/dummy credentials (20.1s)
+  Γ£ÿ  4 Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:110:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-004: Invalid login with SQL injection in email and password (16.2s)
+  Γ£ÿ  5 Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:147:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-005: Invalid login with empty email and password fields (15.8s)
+
+
+  1) Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:14:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-001: Invalid login with Arabic email and password 
+
+    Error: locator.waitFor: Error: strict mode violation: getByPlaceholder('Enter email ID') resolved to 4 elements:
+        1) <input type="email" name="username" id="login-username" data-qa="hocewoqisi" class="text-input W(100%)" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" vwo-html-translate-placeholder="login:enterEmailID"/> aka getByRole('textbox', { name: 'Email address' })
+        2) <input type="email" name="username" data-qa="luqirazixo" id="js-login-confirm-email" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#js-login-confirm-email')
+        3) <input type="email" name="username" data-qa="barupusura" aria-label="Email address" placeholder="Enter email ID" id="forgot-password-username" class="text-input login-email-input W(100%)" vwo-html-translate-attr="placeholder,aria-label" vwo-html-translate-aria-label="login:emailAddress" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#forgot-password-username')
+        4) <input type="email" id="sso-email" name="username" data-qa="gakifiqexa" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#sso-email')
+
+    Call log:
+    [2m  - waiting for getByPlaceholder('Enter email ID') to be visible[22m
+
+
+       9 |     await page.goto(LOGIN_URL);
+      10 |     // Wait for the login form to be ready
+    > 11 |     await page.getByPlaceholder('Enter email ID').waitFor({ state: 'visible', timeout: 15000 });
+         |                                                   ^
+      12 |   });
+      13 |
+      14 |   test('TC-001: Invalid login with Arabic email and password', async ({ page }) => {
+        at C:\Users\ITSD\Desktop\Playwright\AI_playwright\Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:11:51
+
+    Error Context: test-results\Lecture_Playwright_MCP-dem-63ec4-h-Arabic-email-and-password\error-context.md
+
+  2) Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:45:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-002: Invalid login with Chinese email and password 
+
+    Error: locator.waitFor: Error: strict mode violation: getByPlaceholder('Enter email ID') resolved to 4 elements:
+        1) <input type="email" name="username" id="login-username" data-qa="hocewoqisi" class="text-input W(100%)" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" vwo-html-translate-placeholder="login:enterEmailID"/> aka getByRole('textbox', { name: 'Email address' })
+        2) <input type="email" name="username" data-qa="luqirazixo" id="js-login-confirm-email" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#js-login-confirm-email')
+        3) <input type="email" name="username" data-qa="barupusura" aria-label="Email address" placeholder="Enter email ID" id="forgot-password-username" class="text-input login-email-input W(100%)" vwo-html-translate-attr="placeholder,aria-label" vwo-html-translate-aria-label="login:emailAddress" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#forgot-password-username')
+        4) <input type="email" id="sso-email" name="username" data-qa="gakifiqexa" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#sso-email')
+
+    Call log:
+    [2m  - waiting for getByPlaceholder('Enter email ID') to be visible[22m
+
+
+       9 |     await page.goto(LOGIN_URL);
+      10 |     // Wait for the login form to be ready
+    > 11 |     await page.getByPlaceholder('Enter email ID').waitFor({ state: 'visible', timeout: 15000 });
+         |                                                   ^
+      12 |   });
+      13 |
+      14 |   test('TC-001: Invalid login with Arabic email and password', async ({ page }) => {
+        at C:\Users\ITSD\Desktop\Playwright\AI_playwright\Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:11:51
+
+    Error Context: test-results\Lecture_Playwright_MCP-dem-feb6a--Chinese-email-and-password\error-context.md
+
+  3) Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:76:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-003: Invalid login with fake/dummy credentials 
+
+    Error: locator.waitFor: Error: strict mode violation: getByPlaceholder('Enter email ID') resolved to 4 elements:
+        1) <input type="email" name="username" id="login-username" data-qa="hocewoqisi" class="text-input W(100%)" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" vwo-html-translate-placeholder="login:enterEmailID"/> aka getByRole('textbox', { name: 'Email address' })
+        2) <input type="email" name="username" data-qa="luqirazixo" id="js-login-confirm-email" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#js-login-confirm-email')
+        3) <input type="email" name="username" data-qa="barupusura" aria-label="Email address" placeholder="Enter email ID" id="forgot-password-username" class="text-input login-email-input W(100%)" vwo-html-translate-attr="placeholder,aria-label" vwo-html-translate-aria-label="login:emailAddress" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#forgot-password-username')
+        4) <input type="email" id="sso-email" name="username" data-qa="gakifiqexa" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#sso-email')
+
+    Call log:
+    [2m  - waiting for getByPlaceholder('Enter email ID') to be visible[22m
+
+
+       9 |     await page.goto(LOGIN_URL);
+      10 |     // Wait for the login form to be ready
+    > 11 |     await page.getByPlaceholder('Enter email ID').waitFor({ state: 'visible', timeout: 15000 });
+         |                                                   ^
+      12 |   });
+      13 |
+      14 |   test('TC-001: Invalid login with Arabic email and password', async ({ page }) => {
+        at C:\Users\ITSD\Desktop\Playwright\AI_playwright\Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:11:51
+
+    Error Context: test-results\Lecture_Playwright_MCP-dem-f8986-with-fake-dummy-credentials\error-context.md
+
+  4) Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:110:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-004: Invalid login with SQL injection in email and password 
+
+    Error: locator.waitFor: Error: strict mode violation: getByPlaceholder('Enter email ID') resolved to 4 elements:
+        1) <input type="email" name="username" id="login-username" data-qa="hocewoqisi" class="text-input W(100%)" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" vwo-html-translate-placeholder="login:enterEmailID"/> aka getByRole('textbox', { name: 'Email address' })
+        2) <input type="email" name="username" data-qa="luqirazixo" id="js-login-confirm-email" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#js-login-confirm-email')
+        3) <input type="email" name="username" data-qa="barupusura" aria-label="Email address" placeholder="Enter email ID" id="forgot-password-username" class="text-input login-email-input W(100%)" vwo-html-translate-attr="placeholder,aria-label" vwo-html-translate-aria-label="login:emailAddress" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#forgot-password-username')
+        4) <input type="email" id="sso-email" name="username" data-qa="gakifiqexa" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#sso-email')
+
+    Call log:
+    [2m  - waiting for getByPlaceholder('Enter email ID') to be visible[22m
+
+
+       9 |     await page.goto(LOGIN_URL);
+      10 |     // Wait for the login form to be ready
+    > 11 |     await page.getByPlaceholder('Enter email ID').waitFor({ state: 'visible', timeout: 15000 });
+         |                                                   ^
+      12 |   });
+      13 |
+      14 |   test('TC-001: Invalid login with Arabic email and password', async ({ page }) => {
+        at C:\Users\ITSD\Desktop\Playwright\AI_playwright\Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:11:51
+
+    Error Context: test-results\Lecture_Playwright_MCP-dem-8f708-ction-in-email-and-password\error-context.md
+
+  5) Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:147:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-005: Invalid login with empty email and password fields 
+
+    Error: locator.waitFor: Error: strict mode violation: getByPlaceholder('Enter email ID') resolved to 4 elements:
+        1) <input type="email" name="username" id="login-username" data-qa="hocewoqisi" class="text-input W(100%)" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" vwo-html-translate-placeholder="login:enterEmailID"/> aka getByRole('textbox', { name: 'Email address' })
+        2) <input type="email" name="username" data-qa="luqirazixo" id="js-login-confirm-email" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#js-login-confirm-email')
+        3) <input type="email" name="username" data-qa="barupusura" aria-label="Email address" placeholder="Enter email ID" id="forgot-password-username" class="text-input login-email-input W(100%)" vwo-html-translate-attr="placeholder,aria-label" vwo-html-translate-aria-label="login:emailAddress" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#forgot-password-username')
+        4) <input type="email" id="sso-email" name="username" data-qa="gakifiqexa" placeholder="Enter email ID" vwo-html-translate-attr="placeholder" class="text-input login-email-input W(100%)" vwo-html-translate-placeholder="login:enterEmailID"/> aka locator('#sso-email')
+
+    Call log:
+    [2m  - waiting for getByPlaceholder('Enter email ID') to be visible[22m
+
+
+       9 |     await page.goto(LOGIN_URL);
+      10 |     // Wait for the login form to be ready
+    > 11 |     await page.getByPlaceholder('Enter email ID').waitFor({ state: 'visible', timeout: 15000 });
+         |                                                   ^
+      12 |   });
+      13 |
+      14 |   test('TC-001: Invalid login with Arabic email and password', async ({ page }) => {
+        at C:\Users\ITSD\Desktop\Playwright\AI_playwright\Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:11:51
+
+    Error Context: test-results\Lecture_Playwright_MCP-dem-baeec-y-email-and-password-fields\error-context.md
+
+  5 failed
+    Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:14:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-001: Invalid login with Arabic email and password 
+    Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:45:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-002: Invalid login with Chinese email and password 
+    Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:76:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-003: Invalid login with fake/dummy credentials 
+    Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:110:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-004: Invalid login with SQL injection in email and password 
+    Lecture_Playwright_MCP\demo\specs\invalid-login.spec.js:147:3 ΓÇ║ VWO Invalid Login Test Cases ΓÇ║ TC-005: Invalid login with empty email and password fields 

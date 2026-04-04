@@ -1,0 +1,289 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\ITSD\\Desktop\\Playwright\\AI_playwright\\Lecture_Playwright_MCP\\playwright.config.js",
+    "rootDir": "C:/Users/ITSD/Desktop/Playwright/AI_playwright/Lecture_Playwright_MCP/demo/specs",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/ITSD/Desktop/Playwright/AI_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/ITSD/Desktop/Playwright/AI_playwright/Lecture_Playwright_MCP/demo/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "C:\\Users\\ITSD\\Desktop\\Playwright\\AI_playwright\\Lecture_Playwright_MCP\\stlc_project\\reports\\html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\ITSD\\Desktop\\Playwright\\AI_playwright\\Lecture_Playwright_MCP\\stlc_project\\reports\\results.json"
+        }
+      ],
+      [
+        "C:\\Users\\ITSD\\Desktop\\Playwright\\AI_playwright\\Lecture_Playwright_MCP\\stlc_project\\reporters\\CustomTTAReporter.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "invalid-login.spec.js",
+      "file": "invalid-login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "VWO Invalid Login Test Cases",
+          "file": "invalid-login.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-001: Invalid login with Arabic email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 28147,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "TC-001 PASSED: Arabic login was rejected gracefully, no crash detected.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-01T11:08:12.708Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b7e5692a425e9e246f3-503bcdd85444f7ad2aba",
+              "file": "invalid-login.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "TC-002: Invalid login with Chinese email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18943,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "TC-002 PASSED: Chinese login was rejected gracefully, no crash detected.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-01T11:08:45.665Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b7e5692a425e9e246f3-aa1a76afe3574d195467",
+              "file": "invalid-login.spec.js",
+              "line": 45,
+              "column": 3
+            },
+            {
+              "title": "TC-003: Invalid login with fake/dummy credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17689,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "TC-003 Page content snippet: \n\t\n\t<iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-NC5NN3\"\n\theight=\"0\" width=\"0\" title=\"google tag manager\" style=\"display:none;visibility:hidden\"></iframe>\n\t\n\t\tif (location.host === 'app.vwo.com') {\n\t\t\t(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n\t\t\tnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n\t\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n\t\t\t'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n\n"
+                        },
+                        {
+                          "text": "TC-003 PASSED: Dummy credentials login was rejected.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-01T11:09:04.659Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b7e5692a425e9e246f3-19efa350c66e3e89dcc8",
+              "file": "invalid-login.spec.js",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "TC-004: Invalid login with SQL injection in email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15896,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "TC-004 PASSED: SQL injection was handled safely, no unauthorized access.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-01T11:09:22.395Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b7e5692a425e9e246f3-33241e35341ccb59e3e9",
+              "file": "invalid-login.spec.js",
+              "line": 110,
+              "column": 3
+            },
+            {
+              "title": "TC-005: Invalid login with empty email and password fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24128,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "TC-005 PASSED: Empty field validation worked correctly.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-01T11:09:38.336Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b7e5692a425e9e246f3-452546ef9e42a633813e",
+              "file": "invalid-login.spec.js",
+              "line": 147,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-01T11:08:09.773Z",
+    "duration": 113061.835,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
