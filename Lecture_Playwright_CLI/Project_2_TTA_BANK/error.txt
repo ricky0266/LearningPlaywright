@@ -1,0 +1,28 @@
+﻿
+Running 1 test using 1 worker
+
+  Γ£ÿ  1 tta_bank_transfer.spec.js:5:9 ΓÇ║ TTA Bank - Transfer Funds Flow ΓÇ║ Create dummy signup and transfer funds (30.1s)
+
+
+  1) tta_bank_transfer.spec.js:5:9 ΓÇ║ TTA Bank - Transfer Funds Flow ΓÇ║ Create dummy signup and transfer funds 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('textbox', { name: 'Full Name' })[22m
+
+
+      10 |         await page.getByRole('button', { name: 'Sign Up' }).click();
+      11 |         
+    > 12 |         await page.getByRole('textbox', { name: 'Full Name' }).fill('Dummy User');
+         |                                                                ^
+      13 |         await page.getByRole('textbox', { name: 'Email Address' }).fill('dummyuser1234@ttabank.com');
+      14 |         await page.getByRole('textbox', { name: 'Password' }).fill('SecretPass123!');
+      15 |         await page.getByRole('button', { name: 'Create Account' }).click();
+        at C:\Users\ITSD\Desktop\Playwright\AI_playwright\Lecture_Playwright_CLI\Project_2_TTA_BANK\tta_bank_transfer.spec.js:12:64
+
+    Error Context: ..\..\test-results\tta_bank_transfer-TTA-Bank-a6521-y-signup-and-transfer-funds\error-context.md
+
+  1 failed
+    tta_bank_transfer.spec.js:5:9 ΓÇ║ TTA Bank - Transfer Funds Flow ΓÇ║ Create dummy signup and transfer funds 

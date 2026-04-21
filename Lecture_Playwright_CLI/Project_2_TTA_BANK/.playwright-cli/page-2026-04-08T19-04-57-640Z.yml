@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e426]:
+    - generic [ref=e427]:
+      - img [ref=e429]
+      - heading "TTA Bank" [level=1] [ref=e432]
+      - paragraph [ref=e433]: Secure Digital Banking Portal
+    - generic [ref=e434]:
+      - generic [ref=e435]:
+        - generic [ref=e436]:
+          - generic [ref=e437]: Email Address
+          - generic [ref=e438]:
+            - generic:
+              - img
+            - textbox "you@example.com" [ref=e439]: alex.morgan@ttabank.com
+        - generic [ref=e440]:
+          - generic [ref=e441]: Password
+          - generic [ref=e442]:
+            - generic:
+              - img
+            - textbox "••••••••" [ref=e443]
+        - generic [ref=e444]:
+          - generic [ref=e445]:
+            - checkbox "Remember me" [ref=e446]
+            - generic [ref=e447]: Remember me
+          - link "Forgot password?" [ref=e449] [cursor=pointer]:
+            - /url: "#"
+        - button "Sign In" [ref=e450] [cursor=pointer]
+      - paragraph [ref=e452]:
+        - text: Don't have an account?
+        - button "Sign Up" [ref=e453] [cursor=pointer]
+    - paragraph [ref=e454]:
+      - text: © 2024 TTA Bank. All rights reserved.
+      - text: Authorized and Regulated by the Financial Conduct Authority.
+  - generic [ref=e225]: $0k

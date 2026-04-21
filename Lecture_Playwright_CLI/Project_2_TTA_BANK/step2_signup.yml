@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - img [ref=e6]
+    - heading "TTA Bank" [level=1] [ref=e9]
+    - paragraph [ref=e10]: Create your digital account
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e32]:
+        - generic [ref=e33]: Full Name
+        - generic [ref=e34]:
+          - generic:
+            - img
+          - textbox "John Doe" [ref=e35]
+      - generic [ref=e13]:
+        - generic [ref=e14]: Email Address
+        - generic [ref=e15]:
+          - generic:
+            - img
+          - textbox "you@example.com" [ref=e16]
+      - generic [ref=e17]:
+        - generic [ref=e18]: Password
+        - generic [ref=e19]:
+          - generic:
+            - img
+          - textbox "••••••••" [ref=e20]
+      - button "Create Account" [ref=e36] [cursor=pointer]
+    - paragraph [ref=e29]:
+      - text: Already have an account?
+      - button "Sign In" [active] [ref=e37] [cursor=pointer]
+  - paragraph [ref=e31]:
+    - text: © 2024 TTA Bank. All rights reserved.
+    - text: Authorized and Regulated by the Financial Conduct Authority.

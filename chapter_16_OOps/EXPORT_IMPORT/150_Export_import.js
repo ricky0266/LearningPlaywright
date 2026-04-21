@@ -4,3 +4,5 @@ console.log(BASE_URL);
 // console.log(fname);
 let result = formatUpperCaseString("Pramod");
 console.log(result);
+
+

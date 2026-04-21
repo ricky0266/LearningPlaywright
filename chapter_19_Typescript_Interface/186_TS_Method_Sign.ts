@@ -10,4 +10,6 @@ const calc: Calculator = {
     multiply: (a, b) => a * b
 }
 
-console.log(calc);
+console.log(calc.add(3, 5));
+console.log(calc.subtract(3, 5));
+console.log(calc.multiply(3, 5));

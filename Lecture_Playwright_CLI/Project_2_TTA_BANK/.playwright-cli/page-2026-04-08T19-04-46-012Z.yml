@@ -1,0 +1,120 @@
+- generic [ref=e1]:
+  - generic [ref=e45]:
+    - complementary [ref=e46]:
+      - generic [ref=e47]:
+        - img [ref=e48]
+        - generic [ref=e51]: TTA Bank
+      - navigation [ref=e53]:
+        - button "Dashboard" [active] [ref=e54] [cursor=pointer]:
+          - img [ref=e55]
+          - text: Dashboard
+        - button "Transfer Funds" [ref=e60] [cursor=pointer]:
+          - img [ref=e61]
+          - text: Transfer Funds
+        - button "Expense Tracker" [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+          - text: Expense Tracker
+        - button "Transactions" [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+          - text: Transactions
+        - button "AI Support" [ref=e73] [cursor=pointer]:
+          - img [ref=e74]
+          - text: AI Support
+        - button "Settings" [ref=e76] [cursor=pointer]:
+          - img [ref=e77]
+          - text: Settings
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - img "User" [ref=e82]
+          - generic [ref=e83]:
+            - generic [ref=e84]: Dummy User
+            - generic [ref=e85]: dummyuser1234@ttabank.com
+        - button "Sign Out" [ref=e86] [cursor=pointer]:
+          - img [ref=e87]
+          - text: Sign Out
+    - main [ref=e90]:
+      - generic [ref=e91]:
+        - heading "Dashboard" [level=1] [ref=e298]
+        - button [ref=e94] [cursor=pointer]:
+          - img [ref=e95]
+      - generic [ref=e299]:
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - paragraph [ref=e304]: Total Balance
+                - heading "$45,000.00" [level=3] [ref=e305]
+              - img [ref=e307]
+            - generic [ref=e310]:
+              - generic [ref=e311]:
+                - img [ref=e312]
+                - text: +2.5%
+              - generic [ref=e315]: from last month
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - paragraph [ref=e319]: Monthly Income
+                - heading "$50,000" [level=3] [ref=e320]
+              - img [ref=e322]
+            - paragraph [ref=e325]: Based on recent activity
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - generic [ref=e328]:
+                - paragraph [ref=e329]: Monthly Expenses
+                - heading "$5,315.48" [level=3] [ref=e330]
+              - img [ref=e332]
+            - paragraph [ref=e335]: Total debit transactions
+        - generic [ref=e336]:
+          - generic [ref=e337]:
+            - heading "Balance History" [level=3] [ref=e338]
+            - application [ref=e342]:
+              - generic [ref=e353]:
+                - generic [ref=e354]:
+                  - generic [ref=e356]: Mon
+                  - generic [ref=e358]: Tue
+                  - generic [ref=e360]: Wed
+                  - generic [ref=e362]: Thu
+                  - generic [ref=e364]: Fri
+                  - generic [ref=e366]: Sat
+                  - generic [ref=e368]: Sun
+                - generic [ref=e369]:
+                  - generic [ref=e371]: $0k
+                  - generic [ref=e373]: $15k
+                  - generic [ref=e375]: $30k
+                  - generic [ref=e377]: $45k
+                  - generic [ref=e379]: $60k
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - heading "Recent Activity" [level=3] [ref=e382]
+              - button "View All" [ref=e383] [cursor=pointer]
+            - generic [ref=e384]:
+              - generic [ref=e385]:
+                - generic [ref=e386]:
+                  - img [ref=e388]
+                  - generic [ref=e390]:
+                    - paragraph [ref=e391]: Transfer to Sarah Smith
+                    - paragraph [ref=e392]: 4/9/2026
+                - generic [ref=e393]: "-$5000.00"
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - img [ref=e397]
+                  - generic [ref=e399]:
+                    - paragraph [ref=e400]: Whole Foods Market
+                    - paragraph [ref=e401]: 10/25/2023
+                - generic [ref=e402]: "-$129.99"
+              - generic [ref=e403]:
+                - generic [ref=e404]:
+                  - img [ref=e406]
+                  - generic [ref=e409]:
+                    - paragraph [ref=e410]: Opening Deposit
+                    - paragraph [ref=e411]: 10/24/2023
+                - generic [ref=e412]: +$50000.00
+              - generic [ref=e413]:
+                - generic [ref=e414]:
+                  - img [ref=e416]
+                  - generic [ref=e418]:
+                    - paragraph [ref=e419]: Netflix Subscription
+                    - paragraph [ref=e420]: 10/23/2023
+                - generic [ref=e421]: "-$15.99"
+            - button "Quick Transfer" [ref=e422] [cursor=pointer]
+  - generic [ref=e225]: $0k

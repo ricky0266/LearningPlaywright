@@ -1,4 +1,6 @@
 class Browser {
+
+    // Param constructor (arguments)
     constructor(name) {
         this.name = name;
         this.isOpen = true;
